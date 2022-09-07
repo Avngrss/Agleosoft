@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="./css/HeaderMenu.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/mainContent.css" />
+    <link rel="stylesheet" href="./css/reviews.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/tasks.css" />
   </head>
   <body>
     <header>
@@ -104,7 +108,239 @@
           </div>
         </div>
       </section>
+      <section class="services__section">
+        <div class="container">
+          <div class="services">
+            <div class="services__block">
+              <div>
+                <img src="./img/services/home.png" alt="home" />
+              </div>
+              <b class="text-center services__title">Локальное хранилище данных</b>
+              <p class="text-center services__text">на твердотельных накопителях Intel®, имеющих емкость до 1,92 ТБ.</p>
+            </div>
+            <div class="services__block">
+              <div>
+                <img src="./img/services/Vector.png" alt="home" />
+              </div>
+              <b class="text-center services__title">Центральные процессоры Intel® Xeon® Scalable</b>
+              <p class="text-center services__text">содержат до 96 виртуальных процессоров и до 512 ГБ оперативной памяти.</p>
+            </div>
+            <div class="services__block">
+              <div>
+                <img src="./img/services/eye.png" alt="home" />
+              </div>
+              <b class="text-center services__title">Бесплатное тестирование</b>
+              <p class="text-center services__text">от двух дней до недели в зависимости от конфигурации</p>
+            </div>
+            <div class="services__block">
+              <div>
+                <img src="./img/services/circle.png" alt="home" />
+              </div>
+              <b class="text-center services__title">100% производительности</b>
+              <p class="text-center services__text">закрепляем физические ядра процессора и графические адаптеры за 1 клиентом.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="works">
+            <h2 class="works__title">Наши услуги</h2>
+            <p class="works__text">
+              Мы решаем любые бизнес-задачи при помощи <br />
+              облачных технологий и систем ИИ
+            </p>
+            <div class="works__block">
+              <div class="works__card">
+                <b class="text-center cards__title">VDS на основе GPU</b>
+                <img src="./img/works/Rectangle1.png" alt="Rectangle" />
+                <a href="">Подробнее</a>
+              </div>
+              <div class="works__card">
+                <b class="text-center cards__title">Установка и настройка ПО</b>
+                <img src="./img/works/Rectangle2.png" alt="Rectangle" />
+                <a href="">Подробнее</a>
+              </div>
+              <div class="works__card">
+                <b class="text-center cards__title">Установка и настройка ПО</b>
+                <img src="./img/works/Rectangle1.png" alt="Rectangle" />
+                <a href="">Подробнее</a>
+              </div>
+            </div>
+            <div class="works__block">
+              <div class="works__card">
+                <b class="text-center cards__title">VDS на основе GPU</b>
+                <img src="./img/works/Rectangle5.png" alt="Rectangle" />
+                <a href="">Подробнее</a>
+              </div>
+              <div class="works__card">
+                <b class="text-center cards__title">VDS на основе FPGA</b>
+                <img src="./img/works/Rectangle6.png" class="img-fluid" alt="Rectangle" />
+                <a href="">Подробнее</a>
+              </div>
+              <div class="works__card">
+                <b class="text-center cards__title">Хостинги и файл серверы</b>
+                <img src="./img/works/Rectangle3.png" alt="Rectangle" />
+                <a href="">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="peculiarities">
+        <div class="container-fluid peculiarities__container">
+          <div class="container">
+            <div class="peculiarities__block">
+              <h2 class="peculiarities__block-title">Узнайте почему клиенты доверяют нам</h2>
+              <p class="peculiarities__block-text">
+                Мы подбираем максимально подходящую для каждого клиента коныигурацию аппаратных ресурсов <br />
+                и ПО с возможностью гибкой реконфигурации в процессе работы
+              </p>
+              <div class="peculiarities__card">
+                <div class="peculiarities__card-item">
+                  <p class="card__item-text">Десятки готовых обращов на основе ОС Linux и Windows разных дистрибутивов</p>
+                  <a href="">Подробнее</a>
+                </div>
+                <div class="peculiarities__card-item">
+                  <p class="card__item-text">Использование блокчейн-тезнологий без покупки дорогостоящего оборудования</p>
+                  <a href="">Подробнее</a>
+                </div>
+                <div class="peculiarities__card-item">
+                  <p class="card__item-text">Аренда недорогих хостингов и инстансов, оптимизированных под файловые хранилища</p>
+                  <a href="">Подробнее</a>
+                </div>
+              </div>
+              <div class="peculiarities__card">
+                <div class="peculiarities__card-item">
+                  <p class="card__item-text">
+                    Быстрая разработка систем искусственного интелекта <br />
+                    (AI)
+                  </p>
+                  <a href="">Подробнее</a>
+                </div>
+                <div class="peculiarities__card-item">
+                  <p class="card__item-text">Множество решений для задач с высокопроизводительными вычислениями</p>
+                  <a href="">Подробнее</a>
+                </div>
+                <div class="peculiarities__card-item">
+                  <p class="card__item-text">
+                    Оплата только за фактическое время обучения моделей <br />
+                    ML/DL
+                  </p>
+                  <a href="">Подробнее</a>
+                </div>
+              </div>
+              <h2 class="peculiarities__block-subtitle">Наша главная особенность - бесплатная установка и настройка ПО</h2>
+              <p class="peculiarities__block-subtext">При заказе дорогих серверов с GPU или CPU или при длительной аренде машины (от 20 дней)”. И далее краткое описание наших услуг по установке и настройке ПО для большинства бизнес-задач под ОС Windows и Linux разных видов и версий</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tasks">
+        <div class="container-fluid tasks__container">
+          <div class="container">
+            <div class="tasks__block">
+              <h3 class="tasks__title">Мы решаем любые бизнес-задачи</h3>
+              <p class="tasks__text">
+                Нужно ли вам арендовать виртуальную машину для решения задач ML/DL, высокопроизводительных вычислений (HPC), моделирования сложных процессов, блокчейн-технологий и т.д., нужно ли вам реализовать нестандартное решение вашей задачи из области ИИ, или вам нужен просто удаленное офисное рабочее место, хостинг или файловое хранилище, мы
+                всегда сможем вам помочь!
+              </p>
+              <div class="tasks__block-info">
+                <div class="tasks__block-item"><p>Нужно хранить и обрабатывать большой объем данных?</p></div>
+                <div class="tasks__block-item"><p>Нужны мощности для систем телекоммуникаций, мобильные сетей, сети 5G и т.д.?</p></div>
+              </div>
+              <div class="tasks__block-info">
+                <div class="tasks__block-item"><p>Нужно моделирование, проектирование или создание графики и анимации?</p></div>
+                <div class="tasks__block-item"><p>Хотите заказать уникальное ИИ решение?</p></div>
+              </div>
+              <div class="tasks__block-info">
+                <div class="tasks__block-item"><p>Нужен просто удаленный рабочий стол для учебы или работы?</p></div>
+                <div class="tasks__block-item"><p>Нужна разработка нейросетей или иных алгоритмов машинного обучения или их инференс на конечных устройствах?</p></div>
+              </div>
+              <div class="tasks__block-info">
+                <div class="tasks__block-item"><p>Нужен сервер для потоковой передачи и обработки данных?</p></div>
+                <div class="tasks__block-item"><p>Нужно простое облачное хранилище или хостинг?</p></div>
+              </div>
+              <div class="tasks__block-links">
+                <a class="tasks__block-link" href="">Все бизнес-кейсы</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__block">
+            <h3 class="reviews__title">Наши отзывы</h3>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/slider/5.jpg" alt="slide" /></div>
+                <div class="swiper-slide"><img src="./img/slider/5.jpg" alt="slide" /></div>
+                <div class="swiper-slide"><img src="./img/slider/5.jpg" alt="slide" /></div>
+                <div class="swiper-slide"><img src="./img/slider/5.jpg" alt="slide" /></div>
+                <div class="swiper-slide"><img src="./img/slider/5.jpg" alt="slide" /></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="container">
+          <h2 class="footer__title">Наши партнеры</h2>
+          <div class="partners__block">
+            <div class="partners__block-item"><img src="./img/partners/sberbank.png" alt="sberbank" /></div>
+            <div class="partners__block-item"><img src="./img/partners/alfabank.png" alt="alfabank" /></div>
+            <div class="partners__block-item"><img src="./img/partners/1c.png" alt="1c" /></div>
+            <div class="partners__block-item"><img src="./img/partners/bitrix.png" alt="bitrix" /></div>
+            <div class="partners__block-item"><img src="./img/partners/qiwi.png" alt="qiwi" /></div>
+          </div>
+          <div class="consultation">
+            <div class="consultation__title">Нужна консультация?</div>
+            <div class="consultation__text">
+              Подробно расскажем о наших услугах, <br />
+              видах работ и типовых проектах, рассчитаем стоимость <br />
+              и подготовим индивидуальное предложение!
+            </div>
+            <div class="consultation__btn"><button>Связаться с нами</button></div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__main">
+              <div class="footer__logo"></div>
+              <div class="footer__menu"></div>
+              <div class="footer__menu-one"></div>
+            </div>
+            <div class="footer__main-one"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 3,
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>

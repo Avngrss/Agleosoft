@@ -21,3 +21,5 @@ menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
   menu.classList.toggle("active");
 });
+
+//Swiper
