@@ -1,27 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import "./variables.scss";
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-
+// Header
 header {
   padding: 21px;
   max-height: 100px;
 }
-
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .menu__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
 }
-
 .menu__mail a,
 .menu__phone a {
   text-decoration: none;
@@ -30,18 +28,15 @@ header {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: #333333;
+  &:hover {
+    color: $green;
+  }
 }
-.menu__mail a:hover,
-.menu__phone a:hover {
-  color: #219653;
-}
-
 .menu__mail-img::before {
   content: url(../img/header/envelope-alt.png);
   vertical-align: middle;
   padding-right: 8px;
 }
-
 .menu__phone-img::before {
   content: url(../img/header/phone.png);
   vertical-align: middle;
@@ -52,25 +47,26 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #219653;
+  color: $green;
   padding: 13px 31px;
-  border: 2px solid #219653;
+  border: 2px solid $green;
   filter: drop-shadow(0px 4px 30px rgba(51, 51, 51, 0.1));
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 5px;
+  &:hover {
+    background: $green;
+    color: #ffffff;
+  }
 }
-
+//Modal window
 .wrapper__modal {
   height: 100%;
   width: 100%;
   display: none;
 }
-
 .wrapper__modal.active {
   display: block;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -81,7 +77,6 @@ header {
   opacity: 0.5;
   background: black;
 }
-
 .modal__window {
   position: absolute;
   top: 50%;
@@ -94,25 +89,24 @@ header {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-
 .modal__content {
   background: #ffffff;
 }
 
+//Modal content
 .header__popup h2 {
   font-weight: 900;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  & p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #333333;
+  }
 }
-.header__popup h2 p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  letter-spacing: 0.03em;
-  color: #333333;
-}
-
 .header__popup-form input {
   width: 100%;
   margin: 10px 0px;
@@ -123,7 +117,6 @@ header {
   padding: 10px;
   color: #828282;
 }
-
 .popup__form-textarea {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -133,18 +126,15 @@ header {
   border: 1px solid #333333;
   border-radius: 3px;
 }
-
 .form__check-item {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-
 .form__check-info {
   max-width: 250px;
   max-height: 42px;
 }
-
 .btn__close-content {
   margin-top: 70px;
   font-weight: 500;
@@ -157,17 +147,18 @@ header {
   box-shadow: 0px 4px 30px rgba(33, 150, 83, 0.15);
   border-radius: 5px;
 }
-
+// Menu
 .menu__container {
   background: #333333;
   height: 50px;
 }
-
 .menu__block {
   display: flex;
   justify-content: flex-end;
 }
-
+.menu__item li {
+  list-style: none;
+}
 .menu__item a {
   text-decoration: none;
   font-weight: 400;
@@ -175,8 +166,12 @@ header {
   line-height: 16px;
   text-transform: uppercase;
   color: #219653;
+  transition: all 0.5s;
+  &:hover {
+    color: #ffffff;
+    font-size: 16px;
+  }
 }
-
 .menu__btn-mobile {
   width: 30px;
   height: 30px;
@@ -185,14 +180,13 @@ header {
   padding: 15px;
   display: none;
 }
-
 .menu__btn-mobile span {
   width: 30px;
   height: 2px;
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: red;
+  background-color: $green;
   transform: translate(-50%, -50%);
   transition: all 0.5s;
 }
@@ -200,11 +194,9 @@ header {
 .menu__btn-mobile span:nth-child(2) {
   top: calc(50% - 10px);
 }
-
 .menu__btn-mobile span:nth-child(3) {
   top: calc(50% + 10px);
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -212,10 +204,12 @@ nav {
   gap: 95px;
   padding-top: 15px;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
   .menu__btn-mobile {
     display: block;
+    position: absolute;
+    top: 110px;
+    right: 10px;
   }
   .menu__item {
     position: fixed;
@@ -224,16 +218,14 @@ nav {
     width: 100%;
     height: 100%;
     padding: 15px;
-    background-color: grey;
+    background: #000;
     transform: translateY(-100%);
     transition: transform 0.5s;
   }
   .menu__item.active {
     transform: translateY(0);
   }
-  .menu__item li {
-    list-style: none;
-  }
+
   .menu__btn-mobile.active span:first-of-type {
     opacity: 0;
   }
@@ -247,5 +239,20 @@ nav {
   }
   nav {
     flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 990px) {
+  .menu__mail,
+  .menu__phone {
+    display: none;
+  }
+}
+@media (max-width: 444px) {
+  .btn__menu {
+    padding: 5px;
+    font-size: 10px;
+    line-height: none;
+    margin-left: 10px;
   }
 }
