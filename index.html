@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/mainContent.css" />
     <link rel="stylesheet" href="./css/reviews.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/partners.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/tasks.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <header>
@@ -285,11 +286,9 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="container">
-          <h2 class="footer__title">Наши партнеры</h2>
+      <section class="partners">
+        <div class="container-fluid container-partners">
+          <h2 class="partners__title">Наши партнеры</h2>
           <div class="partners__block">
             <div class="partners__block-item"><img src="./img/partners/sberbank.png" alt="sberbank" /></div>
             <div class="partners__block-item"><img src="./img/partners/alfabank.png" alt="alfabank" /></div>
@@ -306,13 +305,42 @@
             </div>
             <div class="consultation__btn"><button>Связаться с нами</button></div>
           </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-fluid footer__container">
+        <div class="container">
           <div class="footer__info">
             <div class="footer__main">
-              <div class="footer__logo"></div>
-              <div class="footer__menu"></div>
-              <div class="footer__menu-one"></div>
+              <div class="footer__logo">
+                <img src="./img/footer/logofooter.png" class="img-fluid" alt="logo" />
+              </div>
+              <div class="footer__menu">
+                <ul>
+                  <li><a class="footer__link-menu" href="">Главная</a></li>
+                  <li><a class="footer__link-menu" href="">Услуги</a></li>
+                  <li><a class="footer__link-menu" href="">Поддержка</a></li>
+                  <li><a class="footer__link-menu" href="">Бизнес-кейсы</a></li>
+                </ul>
+              </div>
+              <div class="footer__menu-one">
+                <li><a class="footer__link-menu" href="">О компании</a></li>
+                <li><a class="footer__link-menu" href="">Блог</a></li>
+                <li><a class="footer__link-menu" href="">Контакты</a></li>
+              </div>
             </div>
-            <div class="footer__main-one"></div>
+            <div class="footer__main-one">
+              <div class="footer__btn">
+                <button type="button">Заказать звонок</button>
+              </div>
+              <div class="footer__phone">
+                <a class="footer__link" href="tel:70000000000">+7 (000)00 00 000</a>
+              </div>
+              <div class="footer__mail">
+                <a class="footer__link" href="mailto:INFO@MAIL.COM">INFO@MAIL.COM</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

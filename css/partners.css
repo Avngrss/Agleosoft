@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.partners {
+  margin-top: 50px;
+}
+
+.container-partners {
+  padding: 0 !important;
+}
+
+.partners__title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: #219653;
+}
+
+.partners__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consultation {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.consultation__title {
+  position: relative;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: #ffffff;
+  background: #219653;
+  padding: 42px 42px 42px 150px;
+}
+.consultation__title::before {
+  content: url(../img/footer/horn.png);
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.consultation__title::after {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: -79px;
+  background: #219653;
+  -webkit-clip-path: polygon(0% 0%, 1% 0, 58% 54%, 100% 99%, 0% 100%);
+          clip-path: polygon(0% 0%, 1% 0, 58% 54%, 100% 99%, 0% 100%);
+}
+
+.consultation__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.consultation__btn button {
+  margin-right: 50px;
+  padding: 12px 28px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  border: none;
+  background: #219653;
+  box-shadow: 0px 4px 30px rgba(51, 51, 51, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
